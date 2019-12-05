@@ -1,0 +1,35 @@
+<h2>Edit book using this form</h2>
+
+<?php echo $this->tag->form(BASE_URL.'/book/update'); ?>
+
+    <p>
+        <label for="id">Id</label>
+        <?php echo $this->tag->textField([
+            'id', 'placeholder' => $book->id
+        ]); ?>
+    </p>
+
+    <p>
+        <label for="title">Title</label>
+        <?php echo $this->tag->textField([
+            'title', 'placeholder' => $book->title
+        ]); ?>
+    </p>
+
+    <p>
+        <label for="summary">Summary</label>
+        <?php echo $this->tag->textField([
+            'summary', 'placeholder' => $book->summary
+        ]); ?>
+    </p>
+
+    <p>
+        <label for="release_date">Release Date</label>
+        <?php echo $this->tag->dateField("release_date"); ?>
+    </p>
+
+    <p>
+        <?php echo $this->tag->submitButton("Save"); ?>
+    </p>
+
+</form>

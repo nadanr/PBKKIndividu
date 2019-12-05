@@ -1,0 +1,24 @@
+<h2>Add book using this form</h2>
+
+<?php echo $this->tag->form(BASE_URL.'/book/add'); ?>
+
+    <p>
+        <label for="title">Title</label>
+        <?php echo $this->tag->textField("title"); ?>
+    </p>
+
+    <p>
+        <label for="summary">Summary</label>
+        <?php echo $this->tag->textField("summary"); ?>
+    </p>
+
+    <p>
+        <label for="release_date">Release Date</label>
+        <?php echo $this->tag->dateField("release_date"); ?>
+    </p>
+
+    <p>
+        <?php echo $this->tag->submitButton("Register"); ?>
+    </p>
+
+</form>
